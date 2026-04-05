@@ -1,0 +1,68 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "taskpilot"
+version = "0.1.0"
+description = "Drop-in FastAPI background task tracking with SQLite. Status, retries, terminal dashboard. Zero infrastructure."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+authors = [
+    {name = "Michael Pawlus"}
+]
+keywords = ["fastapi", "background-tasks", "task-queue", "sqlite", "cli", "async"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: FastAPI",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "typer>=0.12",
+    "rich>=13.0",
+    "aiosqlite>=0.19",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+fastapi = ["fastapi>=0.100"]
+tui = ["textual>=0.40"]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "httpx>=0.27",
+    "coverage>=7.0",
+    "ruff>=0.4",
+    "mypy>=1.10",
+]
+all = ["taskpilot[fastapi,tui,dev]"]
+
+[project.scripts]
+taskpilot = "taskpilot.cli.app:app"
+
+[project.urls]
+Homepage = "https://github.com/michaelpawlus/taskpilot"
+Repository = "https://github.com/michaelpawlus/taskpilot"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/taskpilot"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
