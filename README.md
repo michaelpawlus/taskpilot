@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/readme/taskpilot-hero.svg" alt="Taskpilot hero graphic" width="100%" />
+  <img src="assets/readme/taskpilot_mascot.png" alt="Taskpilot mascot" width="100%" />
 </p>
 
 # taskpilot
