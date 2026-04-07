@@ -1,0 +1,159 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Taskpilot README hero</title>
+  <desc id="desc">A branded banner showing Taskpilot orchestrating background tasks across status lanes, terminal dashboard panels, and a local SQLite store.</desc>
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1140" y2="580" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="0.52" stop-color="#ECFDF5"/>
+      <stop offset="1" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="260" y1="118" x2="1018" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="404" y1="180" x2="852" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="laneQueued" x1="0" y1="0" x2="0" y2="184" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3F3F46"/>
+      <stop offset="1" stop-color="#27272A"/>
+    </linearGradient>
+    <linearGradient id="laneRunning" x1="0" y1="0" x2="0" y2="184" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#134E4A"/>
+    </linearGradient>
+    <linearGradient id="laneDone" x1="0" y1="0" x2="0" y2="184" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D4ED8"/>
+      <stop offset="1" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="laneRetry" x1="0" y1="0" x2="0" y2="184" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B45309"/>
+      <stop offset="1" stop-color="#7C2D12"/>
+    </linearGradient>
+    <filter id="shadow" x="118" y="58" width="1044" height="524" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="14"/>
+      <feGaussianBlur stdDeviation="16"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.0901961 0 0 0 0 0.164706 0 0 0 0.16 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+    <filter id="soft" x="0" y="0" width="1280" height="640" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" rx="36" fill="url(#bg)"/>
+  <g opacity="0.65" filter="url(#soft)">
+    <circle cx="223" cy="183" r="88" fill="#99F6E4"/>
+    <circle cx="1049" cy="143" r="96" fill="#BFDBFE"/>
+    <circle cx="1038" cy="505" r="112" fill="#A7F3D0"/>
+  </g>
+
+  <g stroke="#CBD5E1" opacity="0.55">
+    <path d="M132 118H1148"/>
+    <path d="M132 210H1148"/>
+    <path d="M132 302H1148"/>
+    <path d="M132 394H1148"/>
+    <path d="M132 486H1148"/>
+    <path d="M220 90V550"/>
+    <path d="M366 90V550"/>
+    <path d="M512 90V550"/>
+    <path d="M658 90V550"/>
+    <path d="M804 90V550"/>
+    <path d="M950 90V550"/>
+    <path d="M1096 90V550"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="150" y="90" width="980" height="460" rx="28" fill="url(#panel)"/>
+    <rect x="150" y="90" width="980" height="460" rx="28" stroke="#1E293B" stroke-width="2"/>
+
+    <g opacity="0.9">
+      <circle cx="190" cy="128" r="7" fill="#F87171"/>
+      <circle cx="214" cy="128" r="7" fill="#FBBF24"/>
+      <circle cx="238" cy="128" r="7" fill="#34D399"/>
+    </g>
+
+    <text x="276" y="135" fill="#94A3B8" font-family="SFMono-Regular, ui-monospace, monospace" font-size="20">taskpilot dashboard</text>
+
+    <text x="214" y="192" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="70" font-weight="700">Taskpilot</text>
+    <text x="216" y="232" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="23">FastAPI background tasks with retries, status, and a local-first control tower.</text>
+
+    <rect x="214" y="262" width="638" height="12" rx="6" fill="url(#accent)" opacity="0.95"/>
+
+    <g transform="translate(214 302)">
+      <rect width="138" height="184" rx="20" fill="url(#laneQueued)"/>
+      <rect x="156" width="138" height="184" rx="20" fill="url(#laneRunning)"/>
+      <rect x="312" width="138" height="184" rx="20" fill="url(#laneDone)"/>
+      <rect x="468" width="138" height="184" rx="20" fill="url(#laneRetry)"/>
+
+      <text x="20" y="34" fill="#E5E7EB" font-family="SFMono-Regular, ui-monospace, monospace" font-size="20">QUEUED</text>
+      <text x="176" y="34" fill="#CCFBF1" font-family="SFMono-Regular, ui-monospace, monospace" font-size="20">RUNNING</text>
+      <text x="332" y="34" fill="#DBEAFE" font-family="SFMono-Regular, ui-monospace, monospace" font-size="20">DONE</text>
+      <text x="488" y="34" fill="#FDE68A" font-family="SFMono-Regular, ui-monospace, monospace" font-size="20">RETRY</text>
+
+      <g fill="#F8FAFC" font-family="SFMono-Regular, ui-monospace, monospace" font-size="16" opacity="0.92">
+        <text x="20" y="78">email.send()</text>
+        <text x="20" y="108">report.build()</text>
+        <text x="20" y="138">sync.billing()</text>
+
+        <text x="176" y="78">invoice.pdf()</text>
+        <text x="176" y="108">webhook.push()</text>
+        <text x="176" y="138">cache.warm()</text>
+
+        <text x="332" y="78">image.resize()</text>
+        <text x="332" y="108">digest.publish()</text>
+        <text x="332" y="138">audit.flush()</text>
+
+        <text x="488" y="78">flaky.job()</text>
+        <text x="488" y="108">attempt 2/3</text>
+        <text x="488" y="138">backoff 00:08</text>
+      </g>
+
+      <g>
+        <circle cx="110" cy="160" r="9" fill="#71717A"/>
+        <circle cx="266" cy="160" r="9" fill="#2DD4BF"/>
+        <circle cx="422" cy="160" r="9" fill="#60A5FA"/>
+        <circle cx="578" cy="160" r="9" fill="#F59E0B"/>
+      </g>
+    </g>
+
+    <g transform="translate(882 176)">
+      <rect width="170" height="126" rx="22" fill="#0B1220" stroke="#1F2937"/>
+      <text x="22" y="36" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">SQLite</text>
+      <text x="22" y="60" fill="#94A3B8" font-family="SFMono-Regular, ui-monospace, monospace" font-size="15">local state</text>
+      <ellipse cx="118" cy="82" rx="34" ry="11" fill="#38BDF8" opacity="0.85"/>
+      <path d="M84 82V104C84 110.075 99.2223 115 118 115C136.778 115 152 110.075 152 104V82" fill="#1D4ED8" opacity="0.8"/>
+      <ellipse cx="118" cy="104" rx="34" ry="11" fill="#2563EB"/>
+    </g>
+
+    <g transform="translate(884 326)">
+      <rect width="168" height="126" rx="22" fill="#07111D" stroke="#1F2937"/>
+      <text x="20" y="34" fill="#CCFBF1" font-family="SFMono-Regular, ui-monospace, monospace" font-size="17">$ taskpilot tail</text>
+      <text x="20" y="63" fill="#2DD4BF" font-family="SFMono-Regular, ui-monospace, monospace" font-size="14">[SUCCEEDED] digest.publish</text>
+      <text x="20" y="87" fill="#FBBF24" font-family="SFMono-Regular, ui-monospace, monospace" font-size="14">[RETRYING ] flaky.job</text>
+      <text x="20" y="111" fill="#60A5FA" font-family="SFMono-Regular, ui-monospace, monospace" font-size="14">[RUNNING  ] invoice.pdf</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="101" y="188" width="112" height="56" rx="16" fill="#FFFFFF" stroke="#C7D2FE" stroke-width="2"/>
+    <text x="122" y="223" fill="#1E293B" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">FastAPI</text>
+    <path d="M214 216H260" stroke="#14B8A6" stroke-width="4" stroke-linecap="round"/>
+    <path d="M1041 239H1094" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M1088 239L1074 230V248L1088 239Z" fill="#38BDF8"/>
+    <text x="1102" y="244" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600">zero infra</text>
+  </g>
+
+  <g opacity="0.92">
+    <rect x="158" y="566" width="192" height="30" rx="15" fill="#E2E8F0"/>
+    <rect x="370" y="566" width="214" height="30" rx="15" fill="#D1FAE5"/>
+    <rect x="604" y="566" width="170" height="30" rx="15" fill="#DBEAFE"/>
+    <text x="184" y="587" fill="#334155" font-family="SFMono-Regular, ui-monospace, monospace" font-size="16">track decorators</text>
+    <text x="398" y="587" fill="#065F46" font-family="SFMono-Regular, ui-monospace, monospace" font-size="16">terminal dashboard</text>
+    <text x="632" y="587" fill="#1D4ED8" font-family="SFMono-Regular, ui-monospace, monospace" font-size="16">retry control</text>
+  </g>
+</svg>
